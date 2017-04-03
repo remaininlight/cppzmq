@@ -449,12 +449,12 @@ namespace zmq
         //  Be careful with this, it's probably only useful for
         //  using the C api together with an existing C++ api.
         //  Normally you should never need to use this.
-        inline ZMQ_EXPLICIT operator void* () ZMQ_NOTHROW
+        inline operator void* () ZMQ_NOTHROW
         {
             return ptr;
         }
 
-        inline ZMQ_EXPLICIT operator void const* () const ZMQ_NOTHROW
+        inline operator void const* () const ZMQ_NOTHROW
         {
             return ptr;
         }
